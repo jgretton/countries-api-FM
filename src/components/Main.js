@@ -18,17 +18,19 @@ export const Main = () => {
 
   return (
     <main className="bg-gray-200 h-full pt-10">
-      {countryData.map((country) => {
-        return (
-          <CountryCard
-            img={country.flag}
-            name={country.name}
-            population={country.population}
-            region={country.region}
-            capital={country.capital}
-          />
-        );
-      })}
+      <div className="flex flex-row flex-wrap m-auto justify-center">
+        {countryData.map((country) => {
+          return (
+            <CountryCard
+              img={country.flag}
+              name={country.name}
+              population={country.population}
+              region={country.region}
+              capital={country.capital}
+            />
+          );
+        })}
+      </div>
     </main>
   );
 };
