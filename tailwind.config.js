@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Nunito: ["Nunito Sans", "sans-serif"],
+        Nunito: ['"Nunito Sans"', "sans-serif"],
       },
       colors: {
         DarkBlue: "hsl(209, 23%, 22%)",
