@@ -2,7 +2,7 @@ import React from "react";
 
 export const CountryCard = ({ img, name, population, region, capital }) => {
   return (
-    <div className="max-w-sm w-5/6 bg-white shadow-sm rounded-md m-auto h-auto my-10 mx-5">
+    <div className="md:max-w-xs max-w-sm w-11/12 bg-white shadow-sm rounded-md m-auto h-auto my-10 ">
       <img src={img} alt="" className="w-full rounded-t-md h-56 object-cover" />
       <div className="flex flex-col p-5 pb-12">
         <p className="font-bold text-xl mb-6">{name}</p>
