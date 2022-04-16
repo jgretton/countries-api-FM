@@ -1,11 +1,16 @@
-import { Header } from "./components/Header";
-import { Main } from "./components/Main";
+import React from "react";
+import { Home } from "./pages/Home";
+import { Country } from "./pages/Country";
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App font-Nunito">
-      <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/country" element={<Country />}></Route>
+      </Routes>
     </div>
   );
 }
