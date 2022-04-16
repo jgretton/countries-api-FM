@@ -50,13 +50,15 @@ export const Main = () => {
         <div className="flex flex-row flex-wrap m-auto justify-between">
           {countryData.map((country) => {
             return (
-              <CountryCard
-                img={country.flag}
-                name={country.name}
-                population={country.population}
-                region={country.region}
-                capital={country.capital}
-              />
+              <Link to="/country" state={country}>
+                <CountryCard
+                  img={country.flag}
+                  name={country.name}
+                  population={country.population}
+                  region={country.region}
+                  capital={country.capital}
+                />
+              </Link>
             );
           })}
         </div>
